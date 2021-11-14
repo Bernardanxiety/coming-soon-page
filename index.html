@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,13 +18,32 @@
   </style>
 </head>
 <body>
+<div class="container">
+  <img class="logo-mobile" src="images/logo.svg" alt="base apparel logo">
 
-  We're coming soon
+  <div class="right">
+    <img class="hero-mobile" src="images/hero-mobile.jpg" alt="posing woman">
+    <img class="hero-desktop" src="images/bg-pattern-desktop.svg" alt="posing woman">
+    </div>
+  
+    <div class="left">
+      <img class="logo-desktop" src="images/logo.svg" alt="">
+      <h1><span>We're</span> coming soon</h1>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+      <p class="description">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      
+      <form action="" id="form">
+        <input id="input" type="email" placeholder="Email Adress">
+        <button id="btn"><img src="images/icon-arrow.svg" alt=""></button>
+        <img id="error-icon" src="images/icon-error.svg" alt="">
+        <p id="error-message">Please provide a valid email</p>
 
-  Email Address
+      </form>
+    </div>
+</div>
   
   <footer>
     <p class="attribution">
@@ -29,5 +51,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="app.js"></script>
 </body>
 </html>
