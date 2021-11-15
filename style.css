@@ -167,17 +167,21 @@ h1 span {
 
     .left {
         padding: 6.4rem 21.9rem 6rem 16.5rem;
-        width: calc(1440px-610px);
+        
         text-align: left;
+    }
+
+    .left > *:not(:first-child) {
+        width: min(100%, 446px);
     }
 
     .hero-desktop {
         width: 100%;
+        max-width: 100%;
     }
 
     .right {
-        max-width: 610px;
-        flex-shrink: 0;
+        width: 100%;
     }
 
     h1 {
